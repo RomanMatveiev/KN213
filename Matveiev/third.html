@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width">
+    <title>Turn on the dark side</title>
+    
+
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/Blog.css"> 
+   	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="images"></div>
+	
+  
+  <div class="navbar">
+  <a href="index.html">First</a>
+  <a href="second.html">Second</a>
+  <div class="drop">
+    <button class="dropbtn">Third 
+  
+    </button>
+    <div class="drop-menu">
+      <a href="third.html">Link 1</a>
+      <a href="third.html">Link 2</a>
+      <a href="third.html">Link 3</a>
+    </div>
+  </div> 
+</div>
+<body>
+	<div class="heading"><h1>Form</h1></div>   
+        <div class="blog">
+<form name="form"  action="#"> 
+    <fieldset>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="Name"  minlength="3" maxlength="20" placeholder="Your Name.." onKeyPress="return KeyPress(event, 2);">
+    <label for="age">Age</label>
+    <input  type="number" id="age" name="Age" min="0" max="100" placeholder="Your age.." onKeyPress="return KeyPress(event, 4);">
+    <label for="Email">Email</label>
+  <input type="email" name="e-mail" class="form-control email" id="email" placeholder="Your email.." onkeypress="return KeyPress(event, 5);" style="
+    width: 100%; height: 40px;">   
+    <button type='submit' id='validate'>Validate!</button> 
+        <h2 id='result'></h2>
+           <label for="Number">Number</label>  
+      <input type="tel"  name="text1" id="number" placeholder="Your number.." onkeypress="return KeyPress(event, 6);" style="width: 100%; height: 40px;">  
+          <button type="submit" name="submit" id='validate'  onclick="phonenumber(document.form.text1)" >Validate!</button><br>       
+    <label for="message" id="message">Message</label>            
+    <textarea  type="text" id="text" name="comment" maxlength="200" cols="40" rows="3" placeholder="Your message.." onkeydown="keyDown(event)" onkeyup="keyUp(event)"  ></textarea>     
+    <input type="submit" value="Submit">
+    <input type="reset" value="Erase">
+    </fieldset>
+ </form>
+</div>
+ <script type="text/javascript" src="js/Validator%20e-mail.js"></script>Validator of e-mail
+        <script type="text/javascript" src="js/Validator%20number.js"></script>Validator of numbers
+		<script type="text/javascript" src="js/events.js"></script>
+</body>
+
+</html>

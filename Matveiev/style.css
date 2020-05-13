@@ -1,0 +1,241 @@
+
+
+.theme_button
+{
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight:bold;
+  margin-left: 20%;
+  cursor: pointer;
+  color: rgb(190,200,230);
+}
+
+.shine:hover
+{
+  background-color: rgb(255,255,255);
+  color: black;
+}
+
+.black:hover
+{
+  background-color: rgb(0,0,0);
+}
+
+.images{
+    width:100%;
+    padding-top: 42%;
+    background: url('images/darthvader.jpg') no-repeat center;
+    background-size: cover  ;
+}
+body{
+    
+    /*Підключення шрифтів в папці fonts*/
+   	font-family: 'Myriad', sans-serif;
+    
+    margin: 0;    
+    background: url("images/skystars.jpg")no-repeat center;
+    background-size: cover  ;
+
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(3,700px);
+    grid-auto-rows: 340px;
+    grid-auto-rows: 200px;
+    width: 900px;
+    margin: 10px;
+    border: 3px solid black;
+    min-height: 1000px;
+
+}
+
+
+
+
+.grid-item {
+    width: 260px;
+    margin: 10px;
+    background-color: salmon;
+    border: 3px solid teal;
+    height: 500px;
+}
+.grid-item-1{
+    width: 260px;
+    margin: 10px;
+    background-color: salmon;
+    height: 400px;
+}
+.grid-item-2{
+    width: 260px;
+    margin: 10px;
+    background-color: salmon;
+    height: 230px;
+}
+.grid-item-3{
+    width: 260px;
+    margin: 10px;
+    background-color: salmon;
+    height: 660px;
+}
+
+.flexbox-container{
+
+    display:flex;
+    justify-content: space-between;
+
+}
+.item{
+    width:200px;
+    margin: 10px;
+    border: 3px solid salmon;
+    background: rgb(70,70,110);
+    color: rgb(190,200,230);
+}
+/* .item-1{
+    min-height: 100px;
+}
+.item-2{
+    min-height:200px;
+}
+.item-3{
+   min-height: 300px;
+} */
+
+
+
+
+.parent{
+    width: 900px;
+    margin: 10px;
+    position:relative;
+
+
+
+}
+.child
+{
+  color: rgb(190,200,230);
+}
+.child-one{
+    width: 700px;
+    margin: 10px;
+    background-color: rgb(50,20,75);
+    border: 3px solid goldenrod;
+    min-height: 120px;
+}
+.child-two{
+    width: 700px;
+    margin: 10px;
+    background-color: rgb(75,15,15);
+    border: 3px solid goldenrod;
+    min-height: 120px;
+    position:relative;
+}
+.child-three{
+    width: 700px;
+    margin: 10px;
+    background-color: rgb(100,20,80);
+    border: 3px solid goldenrod;
+    min-height: 120px;
+}
+@media (max-width: 600px) {
+    .grid-container{
+        font-size: 1.25rem;
+
+    }
+    .flexbox-container{
+        flex-direction: column;
+
+    }
+}
+@media (max-width: 800px) {
+    .parent{
+        font-size: 1.25rem;
+        width:490px;
+    }
+}
+
+/*Table Style*/
+
+#table{
+    width: 100%;
+}
+
+#table th,td{
+    border: 1px solid black;
+}
+
+.block_table{
+    background-color:white;
+}
+
+/*Menu Nav Style*/
+.navbar {
+  display: flex;
+  background-color: rgb(40,50,110);
+  position: fixed;
+  top: 0;
+  width: 100vw; 
+  height: 6vh; 
+  min-height: 40px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(190,200,230);
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.drop {
+  float: left;
+  overflow: hidden;
+}
+
+.drop .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(190,200,230);
+  padding: 10px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight:bold;
+}
+
+.navbar a:hover, .drop:hover .dropbtn {
+  background-color: red;
+}
+
+.drop-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+ 
+}
+
+.drop-menu a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drop-menu a:hover {
+  background-color: green;
+}
+
+.drop:hover .drop-menu {
+  display: block;
+}
